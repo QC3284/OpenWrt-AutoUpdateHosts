@@ -13,7 +13,7 @@
 
 ## 使用方法  
 ### 一键安装  
-SSH 登录 OpenWrt，运行以下命令即可执行一键安装脚本（脚本下载链接已经过 JSDELIVR 加速）  
+SSH 登录 OpenWrt，运行以下命令即可执行一键安装脚本（脚本下载链接已经过 jsDelivr CDN 加速）  
 ```bash
 curl -sSL https://cdn.jsdelivr.net/gh/Aethersailor/OpenWrt-AutoUpdateHosts@main/install.sh | sh
 ```
