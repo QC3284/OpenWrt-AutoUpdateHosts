@@ -46,10 +46,4 @@ curl -sSL https://cdn.jsdelivr.net/gh/Aethersailor/OpenWrt-AutoUpdateHosts@main/
 
 ## Star History
 
-<a href="https://star-history.com/#Aethersailor/OpenWrt-AutoUpdateHosts&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Aethersailor/OpenWrt-AutoUpdateHosts&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Aethersailor/OpenWrt-AutoUpdateHosts&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Aethersailor/OpenWrt-AutoUpdateHosts&type=Date" />
- </picture>
-</a>
+[![Star History Chart](https://api.star-history.com/svg?repos=Aethersailor/OpenWrt-AutoUpdateHosts&type=Date)](https://star-history.com/#Aethersailor/OpenWrt-AutoUpdateHosts&Date)
