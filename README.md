@@ -1,8 +1,9 @@
 # OpenWrt-AutoUpdateHosts  
 
 ## 脚本功能
-在 OpenWrt 下实现一键合并广告拦截规则以及其他加速规则至 hosts 文件，无需套娃其他插件即可利用 Dnsmasq 实现去广告以及 DNS 加速功能，可配合系统计划任务实现每日自动合并上游规则至本地 hosts 文件中。  
+在 OpenWrt 下实现每日自动合并广告拦截规则以及其他加速规则至 hosts 文件，无需套娃其他插件即可利用 Dnsmasq 实现去广告以及 DNS 加速功能，可配合系统计划任务实现每日自动合并上游规则至本地 hosts 文件中。  
 目前脚本采用的上游规则为[秋风广告规则](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)以及 [GitHub520](https://github.com/521xueweihan/GitHub520) 加速规则  
+为何选用秋风广告规则？因为我认为这是最优秀的广告拦截规则  
 
 已在 OpenWrt SNAPSHOT 和 ImmortalWrt SNAPSHOT 下通过测试
 
