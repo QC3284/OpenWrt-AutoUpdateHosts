@@ -36,6 +36,12 @@ curl -sSL https://cdn.jsdelivr.net/gh/Aethersailor/OpenWrt-AutoUpdateHosts@main/
 
 更新脚本每次运行完毕后，会自动检测是否安装了 OpenClash。若检测到安装了 OpenClash 会自动重启 OpenClash（OpenClash 会重启 Dnsmasq），若未安装 OpenClash 则会直接重启 Dnsmasq。  
 
+### 卸载  
+复制以下命令到 SSH 中执行，即可还原 hsots 文件，并删除脚本文件以及对应的计划任务  
+```bash
+sed -i '/# AWAvenue-Ads-Rule Start/,/# AWAvenue-Ads-Rule End/d' /etc/hosts && sed -i '/# GitHub520 Host Start/,/# GitHub520 Host End/d' /etc/hosts && sed -i '/^$/d' /etc/hosts && rm -f /etc/autoupdatehosts && sed -i '/autoupdatehosts/d' /etc/crontabs/root
+```
+
 ## 感谢  
 以下排名不分先后  
 - [TG-Twilight/AWAvenue-Ads-Rule](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)  
