@@ -23,13 +23,11 @@ echo "删除之前的 GitHub520 Host 和 Fetch Github(hosts) 条目..."
 sed -i '/# fetch-github-hosts begin/,/# fetch-github-hosts end/d' /etc/hosts
 sed -i '/# GitHub520 Host Start/,/# GitHub520 Host End/d' /etc/hosts
 
-# 拉取 GitHub520 Host 和 Fetch Github 的 hosts 文件
-echo "拉取并合并 GitHub520 Host 和 Fetch Github 的 hosts 文件..."
+# 拉取  Fetch Github 的 hosts 文件
+echo "拉取并合并  Fetch Github 的 hosts 文件..."
 curl https://hosts.gitcdn.top/hosts.txt >> /etc/hosts
-echo 1
-echo 1
-echo 1
-curl https://cdn.jsdelivr.net/gh/521xueweihan/GitHub520@main/hosts >> /etc/hosts 
+
+#curl https://cdn.jsdelivr.net/gh/521xueweihan/GitHub520@main/hosts >> /etc/hosts 
 
 # 删除空行
 echo "删除空行..."
