@@ -18,15 +18,19 @@ sed -i '/# AWAvenue-Ads-Rule Start/,/# AWAvenue-Ads-Rule End/d' /etc/hosts
 #echo "删除空行..."
 #sed -i '/^$/d' /etc/hosts
 
-# 删除之前的GitHub520 Host 和 Fetch Github(hosts) 条目
-echo "删除之前的 GitHub520 Host 和 Fetch Github(hosts) 条目..."
+# 删除之前的GitHub Host 条目
+echo "删除之前的 GitHub hosts 条目..."
 sed -i '/# fetch-github-hosts begin/,/# fetch-github-hosts end/d' /etc/hosts
 sed -i '/# GitHub520 Host Start/,/# GitHub520 Host End/d' /etc/hosts
+sed -i '/# GitHub IP hosts Start/,/# GitHub IP hosts End/d' /etc/hosts
+sed -i '/# GitHub Host Start/,/# GitHub Host End/d' /etc/hosts
 
-# 拉取  Fetch Github 的 hosts 文件
-echo "拉取并合并  Fetch Github 的 hosts 文件..."
+# 拉取 Github 的 hosts 文件
+echo "拉取并合并 Github 的 hosts 文件..."
 curl https://hosts.gitcdn.top/hosts.txt >> /etc/hosts
-curl https://cdn.jsdelivr.net/gh/521xueweihan/GitHub520@main/hosts >> /etc/hosts 
+curl https://cdn.jsdelivr.net/gh/521xueweihan/GitHub520@main/hosts >> /etc/hosts
+curl https://fastly.jsdelivr.net/gh/ittuann/GitHub-IP-hosts@main/hosts >> /etc/hosts
+curl https://gitlab.com/ineo6/hosts/-/raw/master/next-hosts >> /etc/hosts
 
 # 删除空行
 echo "删除空行..."
